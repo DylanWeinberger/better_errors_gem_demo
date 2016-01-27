@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BetterErrors</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if session[:user_id] %>
+		<%= @logedin_user %>
+		<!-- content_tag :h4, "Logged in" -->
+		<%= link_to("Log Out", '/logout', method: :delete) %>
+		<% else %>
+			<%= form_tag("/login", method: "post") do %>  
+			<%=label_tag(:username, "username:") %>   
+		    <%=text_field_tag(:username) %>
+			    <br>
+				   <%=label_tag(:password, "password:") %>   
+				     <%=password_field_tag(:password) %> 
+				     <br>  
+				     <%=submit_tag("Submit") %> 
+				     <% end %>
+					<%= content_tag :h4, "Not logged in" %>
+				<% end %>
+	<%= link_to("All Users", '/users', method: :get) %>
+	<%= link_to("All Posts", '/posts', method: :get) %>
+	<%= link_to("New Post", '/posts/new', method: :get) %>
+	<%= flash[:notice] if flash[:notice]%>
+	<%= flash[:alert] if flash[:alert] %>
+
+<%= yield %>
+
+</body>
+</html>
