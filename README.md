@@ -5,7 +5,11 @@
 
 
 <h3>Getting Started</h3>
-<p>In your new Rails project go to your Gemfile and add gem 'better_errors'. It is important to add it under the development section of your Gemfile as you do not want unauthorized users to have access to this error screen. After bundle installing you shuld be good to go and ready to use better errors.</p>
+<p>In your new Rails project go to your Gemfile and add </p>
+```
+gem 'better_errors'
+```
+<p>It is important to add it under the development section of your Gemfile as you do not want unauthorized users to have access to this error screen. After bundle installing you shuld be good to go and ready to use better errors.</p>
 
 <h3>Benefits and Features</h3>
 <p>better_errors comes with many advantages over the default rails error screen. The first thing you will notice is how much better it looks.</p>
