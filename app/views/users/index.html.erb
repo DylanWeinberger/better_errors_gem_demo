@@ -4,3 +4,6 @@
 	<%= user.email %>
 	<br><br>
 	<% end %>
+
+	<%= pie_chart Post.group(:user).count %>
+
