@@ -25,7 +25,7 @@
 #Variables
 <p>Another great feature is that better errors will show you all the variables you currently have on that page. If you have a current_user method running it will show you that and it will show you all the information on that user. If you are on a post's show page you can see the exact variables information.</p>
 <br>
-#Deep rails learning
+#Learn More About Rails
 <p>An added benefit to better errors is that you really get to learn details about how rails works. By going into All Frames section on the error page you can look through your entire rails project. Additionally if the current error affected any of those pages they will be highlighted. You can see things like where error messages are created through string interpolation. Searching through those frames you can see the scope and the complexity of rails.</p>
 <br><br>
 <p>In the future I will be using better errors on all my rails projects. As this was my first project with the gem I was unable to really feel the true benefits of the gem but as my projects grow in complexity better errors will become more useful. I am already looking forward to getting my first error on my next project.</p>
