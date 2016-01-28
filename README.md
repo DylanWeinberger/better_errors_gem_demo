@@ -37,3 +37,11 @@
 <p>For this project I used a couple of main resources. First I used the Better_Errors github page linked to at the top of this readme. I also watched the railscast linked to below for a quick tutorial and demonstration of its uses.</p>
 
 <a href="https://www.youtube.com/watch?v=aPKy0Zd5AAs">RailsCast #402 Better_errors and RailsPanel</a>
+
+<h3>Chartkick</h3>
+<a href="https://github.com/ankane/chartkick">GitHub link</a>
+<p>For this assignment I also had to implement the chartkick gem into my project. It was quite easy to do. I have added a simple pie chart that shows the percentage of posts each user has made to the users index view. I ran into just a few errors while using this gem that were remedied fairly easily. The main error I ran into was that my pie chart was only displaying "loading...". I looked for a remedy to this situation on GitHub for quite a while and the way I fixed it was by adding the following code into the layout.html.erb</p>
+
+```
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+```
